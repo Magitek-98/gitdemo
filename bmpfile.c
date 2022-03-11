@@ -69,7 +69,7 @@ void bmp_setpixel(BMP *pb, int x, int y, int r, int g, int b)
     int width  = pb->width;
     int height = pb->height;
     int index  = ((height - y + 1) * width + (x - 1)) * 3;
-    *(uint8_t *)(pb->pdata + index) = r;
+    *(uint8_t *)(pb->pdata + index)     = r;
     *(uint8_t *)(pb->pdata + index + 1) = g;
     *(uint8_t *)(pb->pdata + index + 2) = b;
 }
