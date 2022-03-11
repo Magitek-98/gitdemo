@@ -1,5 +1,6 @@
-#ifndef _BMPHEADER_H_
-#define _BMPHEADER_H_
+#ifndef  _BMPHEADER_H_
+#define  _BMPHEADER_H_
+#include <stdint.h>
 
 #pragma pack(1)
 typedef struct {
@@ -12,7 +13,7 @@ typedef struct {
     uint32_t biWidth;           //图像的宽度，以像素为单位
     uint32_t biHeight;          //图像的高度，以像素为单位
     uint16_t biPlanes;          //为目标设备说明位面数，其值总是设为1
-    uint16_t biBitCount;        //说明比特数/像素
+    uint16_t biBitCount;        //位深度
     uint32_t biCompression;     //图像数据压缩类型
     uint32_t biSizeImage;       //图像大小，以字节为单位
     uint32_t biXPelsPerMeter;   //水平分辨率，像素/米
